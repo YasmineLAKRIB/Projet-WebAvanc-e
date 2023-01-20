@@ -1,0 +1,58 @@
+
+<Resultat>
+<match>
+  <equipe1>Argentine</equipe1>
+  <nom1>Argentine</nom1>
+  <equipe2>France</equipe2>
+  <nom2>France</nom2>
+  <heure>17:30</heure>
+  <score>3-3</score>
+  <duree>110'</duree>
+  <penalty></penalty>
+  <chaine> Bein sport 1</chaine>
+</match>
+<match>
+  <equipe1>Espagne</equipe1>
+  <nom1>Espagne</nom1>
+  <equipe2>Maroc</equipe2>
+  <nom2>Maroc</nom2>
+  <heure>17:30</heure>
+  <score>0-0</score>
+  <duree>120'</duree>
+  <penalty>(3)-(0)</penalty>
+  <chaine> Bein sport 2</chaine>
+</match>
+<match>
+ <equipe1>Croatie</equipe1>
+ <nom1>Croatie</nom1>
+  <equipe2>Brezil</equipe2>
+  <nom2>Brezil</nom2>
+  <heure>17:30</heure>
+  <score>1-1</score>
+  <duree>100'</duree>
+  <penalty></penalty>
+  <chaine> Bein sport 3</chaine>
+  </match>
+  <match>
+  <equipe1>Portugal</equipe1>
+  <nom1>Portugal</nom1>
+  <equipe2>Corée du sud</equipe2>
+  <nom2>Corée du sud</nom2>
+  <heure>18:30</heure>
+  <score>2-1</score>
+  <duree>50'</duree>
+  <penalty> </penalty>
+  <chaine> Bein sport max</chaine>
+</match>
+<match>
+  <equipe1>Pays-bas</equipe1>
+  <nom1>Pays-bas</nom1>
+  <equipe2>Etats-unis</equipe2>
+  <nom2>Etats-unis</nom2>
+  <heure>18:30</heure>
+  <score>3-1</score>
+  <duree>50'</duree>
+  <penalty> </penalty>
+  <chaine> Bein sport max1</chaine>
+</match>
+</Resultat>

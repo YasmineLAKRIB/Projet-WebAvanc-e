@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Football</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="header">
+      <a href="../../index.html" class="footy"
+        >Foo <span class="footy">ty .</span></a
+      >
+      <nav class="navbar">
+        <a href="../../index.html">Acceuil</a>
+        <a href="../../Actualite.html">Actualité</a>
+        <a href="../../joueurs.html">Joueurs</a>
+        <a href="../historique/historique.html">Historique</a>
+        <a href="../../achat.html">achat</a>
+      </nav>
+      <!-- boutton contactez nous -->
+      <div class="resp">
+        <a href="../contact/contact.html" class="btn_m">Contactez nous</a>
+      </div>
+    </header>
+
+    <!-- section 1 : image et text -->
+    <section class="acceuil">
+      <!-- main content -->
+      <div class="img_m">
+        <div class="container_y">
+          <div class="form">
+            <div class="contact-info">
+              <h3 class="title">à propos</h3>
+              <p class="text">
+                Decouvrez qui sommes nous, et pour plus d'informations n'hesitez pas à nous contacter
+              </p>
+
+              <div class="info">
+                <div class="information">
+                  <img src="../../assets/location.png" class="icon" alt="" />
+                  <p>BP 32 Bab Ezzouar, 16111 - ALGER.</p>
+                </div>
+                <div class="information">
+                  <img src="../../assets/email.png" class="icon" alt="" />
+                  <p>footy@usthb.dz</p>
+                </div>
+                <div class="information">
+                  <img src="../../assets/phone.png" class="icon" alt="" />
+                  <p>+213 (0) 23 93 48 19</p>
+                </div>
+              </div>
+
+              <div class="social-media">
+                <p>Rejoinez nous sur nos reseaux :</p>
+                <div class="social-icons">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <span
+                ><img
+                  src="../../assets/pngwing.com (8).png"
+                  alt=""
+                  class="circle one"
+              /></span>
+
+              <span class="circle two"></span>
+              <span class="circle three"></span>
+              <span
+                ><img
+                  src="../../assets/pngwing.com (5).png"
+                  alt=""
+                  class="circle four"
+              /></span>
+              <form method="get">
+                <h3 class="title">Contactez-nous</h3>
+
+                <div class="reponse" id="text"><p></p></div>
+
+                <div class="input-container">
+                  <input type="text" name="name" class="input" id="nomprenom" />
+                  <label for="">Nom et Prenom</label>
+                  <span>Nom et Prenom</span>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="email" class="input" id="email" />
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" id="tel" />
+                  <label for="">Telephone</label>
+                  <span>Telephone</span>
+                </div>
+                <div class="input-container textarea">
+                  <textarea
+                    name="message"
+                    class="input"
+                    id="message"
+                  ></textarea>
+                  <label for="">Message</label>
+                  <span>Message</span>
+                </div>
+                <input type="submit" value="Envoyer" class="btn" id="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./contact.js"></script>
+  </body>
+</html>

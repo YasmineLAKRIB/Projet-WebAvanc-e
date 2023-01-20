@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./quiz.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Football</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="header">
+      <a href="../../index.html" class="footy"
+        >Foo <span class="footy">ty .</span></a
+      >
+      <nav class="navbar">
+        <a href="../../index.html">Acceuil</a>
+        <a href="../../Actualite.html">Actualité</a>
+        <a href="../../joueurs.html">Joueurs</a>
+        <a href="../historique/historique.html">Historique</a>
+        <a href="../../achat.html">achat</a>
+      </nav>
+      <!-- boutton contactez nous -->
+      <div class="resp">
+        <a href="../contact/contact.html" class="btn_m">Contactez nous</a>
+      </div>
+    </header>
+
+    <!-- section 1 : image et text -->
+    <section class="acceuil">
+      <!-- main content -->
+      <div class="img_m">
+        <!--Boutton start quiz
+        <div class="start_btn">
+          <button>Start Quiz</button>
+        </div>-->
+        <!--info box-->
+        <div class="info_box">
+          <div class="info_title">
+            <span>Regles du Quiz</span>
+          </div>
+
+          <div class="info_list">
+            <div class="info">1-Le temps de chaque question est de 15s</div>
+            <div class="info">
+              2-Le score sera contabiliser à la fin du quiz
+            </div>
+            <div class="info">
+              3-Une fois le temps depassé, vous ne pourriez plus repondre aux
+              questions
+            </div>
+          </div>
+
+          <!--Buttons-->
+          <div class="buttons">
+            <button class="quit"><a href="../../index.html">Quitter</a></button>
+            <button class="restart">Commencer</button>
+          </div>
+        </div>
+
+        <!--Quiz Box-->
+        <div class="quiz_box">
+          <header>
+            <div class="title">Jeux Quiz Sur le Football</div>
+            <div class="timer">
+              <div class="time_text"></div>
+              <div class="timer_sec"></div>
+            </div>
+            <div class="time_line"></div>
+          </header>
+
+          <section>
+            <div class="que_text">
+              <!--Questions-->
+            </div>
+            <div class="option_list">
+              <!--Les options de reponse-->
+            </div>
+          </section>
+
+          <!--Quiz Box Footer-->
+          <footer>
+            <div class="total_que">
+              <!-- le numero de la question en cours-->
+            </div>
+            <button class="next_btn">Suivant</button>
+          </footer>
+        </div>
+
+        <!-- Result Box-->
+        <div class="result_box">
+          <div class="icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div class="complete_text">Bravo ! Vous avez completez le Quiz</div>
+          <div class="score_text">
+            <!--Le resultat  du quiz-->
+          </div>
+          <div class="buttons">
+            <button class="restart">Rejouer</button>
+            <button class="quit">
+              <a href="../../index.html">Quitter le Quiz</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- debut footer -->
+    <section class="footer">
+      <div class="container_m">
+        <div class="box_m">
+          <h1>à propos</h1>
+          <div class="textAprp">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga vel
+              perspiciatis suscipit quae officia illum, eveniet nihil quam, sit
+              inventore hic laudantium quaerat laborum consequuntur? Aliquid
+              magni eos impedit explicabo?
+            </p>
+          </div>
+          <div class="icon_aprp">
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box_m">
+          <h1>Coordonnées</h1>
+          <div class="icon_contact">
+            <a
+              href="https://www.google.com/maps?ll=36.712162,3.180436&z=15&t=m&hl=fr&gl=DZ&mapclient=embed&cid=8681263668398006906"
+              ><i class="fa-solid fa-location-dot"></i>BP 32 Bab Ezzouar, 16111
+              - ALGER.</a
+            >
+            <a href="tel:+213 (0) 23 93 48 19"
+              ><i class="fa-solid fa-phone"></i>+213 (0) 23 93 48 19</a
+            >
+            <a href="mailto:footy@usthb.dz"
+              ><i class="fa-solid fa-location-dot"></i>footy@usthb.dz</a
+            >
+          </div>
+        </div>
+
+        <div class="box_m">
+          <h1>Liens directs</h1>
+          <div class="icon_ld">
+            <a href="../../index.html">Acceuil</a>
+            <a href="#">Actualité</a>
+            <a href="#">Joueurs</a>
+            <a href="../historique/historique.html">Historique</a>
+            <a href="../contact/contact.html">Contactez nous</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="love">
+        <p>created with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </section>
+    <!-- fin footer -->
+
+    <script src="./qsts.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

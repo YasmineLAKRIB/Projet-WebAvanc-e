@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    
+    <title>Actualite</title>
+
+    <header class="header">
+      <a href="./index.html" class="footy"
+        >Foo <span class="footy">ty .</span></a
+      >
+      <nav class="navbar">
+        <a href="./index.html">Acceuil</a>
+        <a href="./Actualite.html">Actualité</a>
+
+        <a href="./joueurs.html">Joueurs</a>
+        <a href="./pages/historique/historique.html">Historique</a>
+        <a href="./achat.html">achat</a>
+      </nav>
+      <!-- boutton contactez nous -->
+      <div class="resp">
+        <a href="./pages/contact/contact.html" class="btn_m">Contactez nous</a>
+      </div>
+    </header>
+
+    <section class="imagef">
+
+      <div class="info">
+        <h1 id="titre">
+         Découvrez nos Dernieres Informations <br />
+        </h1>
+        <br />
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./assets/argen.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./assets/ronaldo.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./assets/liste.jpg" style="width: 100%" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <br>
+        <h1 id="titre">
+          Découvrez les resultats de vos matchs préférés <br />
+         </h1>
+
+         <div class="btns_m">
+          <a class="start_btny" onclick="load_CoupeDumonde()"><button>Score Matchs Coupe du monde</button></a>
+        </div>
+        <div class="btns_m">
+          <a class="start_btny" onclick="load_DZ()"><button>Score Matchs Algérie</button></a>
+        </div>
+
+        <div>
+          <div id="content1" class="content1" ></div> 
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      ></script>
+      <script src="ajax_L.js"></script>
+      <script src="scriptslide.js"></script>
+  </body>
+   
+  
+     <!-- debut footer -->
+     <section class="footer">
+      <div class="container_m">
+        <div class="box_m">
+          <h1>à propos</h1>
+          <div class="textAprp">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga vel
+              perspiciatis suscipit quae officia illum, eveniet nihil quam, sit
+              inventore hic laudantium quaerat laborum consequuntur? Aliquid
+              magni eos impedit explicabo?
+            </p>
+          </div>
+          <div class="icon_aprp">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+
+        <div class="box_m">
+          <h1>Coordonnées</h1>
+            <div class="icon_contact">
+              <a href="https://www.google.com/maps?ll=36.712162,3.180436&z=15&t=m&hl=fr&gl=DZ&mapclient=embed&cid=8681263668398006906"><i class="fa-solid fa-location-dot"></i>BP 32 Bab Ezzouar, 16111 - ALGER.</a>
+              <a href="tel:+213 (0) 23 93 48 19"><i class="fa-solid fa-phone"></i>+213 (0) 23 93 48 19</a>
+              <a href="mailto:footy@usthb.dz"><i class="fa-solid fa-location-dot"></i>footy@usthb.dz</a>
+            </div>
+        </div>
+
+
+        <div class="box_m">
+          <h1>Liens directs</h1>
+            <div class="icon_ld">
+              <a href="/index.html">Acceuil</a>
+              <a href="#">Actualité</a>
+              <a href="#">Joueurs</a>
+              <a href="#">Historique</a>
+              <a href="/pages/contact/contact.html">Contactez nous</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="love">
+        <p>created with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </section>
+    <!-- fin footer -->
+ 
+</html>

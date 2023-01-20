@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --bleu: #001A70;
+    --vert: #00CC7C;
+    --noir: #000000;
+    --blanc: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+/* *************************** debut navbar **********************************/
+.header {
+    position: fixed;
+    padding: .9rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bleu);
+    z-index: 10000;
+}
+
+.header .resp a {
+    color: var(--blanc);
+    background-color: var(--vert);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+    border-radius: 2vh;
+    font-size: .8rem;
+}
+
+.header .resp :hover {
+    color: var(--bleu);
+}
+
+/* logo */
+.header .footy {
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    color: var(--blanc);
+}
+
+.header .footy span {
+    color: var(--vert);
+}
+
+/* les liens du navbar */
+.header .navbar a {
+    font-size: 1rem;
+    color: var(--blanc);
+    margin: 0 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--vert);
+}
+
+/* responsive */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+}
+
+/* *************************** Fin navbar **********************************/
+
+/* *************************image et contenu d'acceuil****************** */
+
+.img_m {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('assets/img3.jpg');
+}
+
+.acceuil {
+    padding: 0%;
+}
+
+/* style image de l'acceuil */
+.acceuil .acceuil-img .img_m {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* padding: 2rem; */
+    padding: 8%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* contenu de l'image de l'acceuil */
+.acceuil .acceuil-img .img_m .content {
+    text-align: center;
+}
+
+.acceuil .acceuil-img .img_m .content .title_m1  {
+    font-size: 4rem;
+    color: var(--blanc);
+    text-transform: uppercase;
+}
+
+/*Button pour commencer le quiz*/
+.start_btn button {
+  
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--blanc);
+    background-color: rgba(0, 26, 112, .7);
+    font-size: 1.4rem;
+    border-radius: 2vh;
+}
+.start_btn button:hover {
+    color: var(--bleu);
+    background-color: var(--vert);
+    transition: ease-in .5s;
+}
+
+.foot_m {
+    color: var(--bleu);
+    font-size: 3.5rem;
+    font-family: 'Rock Salt', cursive;
+
+}
+
+/* ************************* Fin image et contenu d'acceuil****************** */
+
+
+/* ******************************debut footer********************************* */
+
+.footer {
+    background: var(--bleu);
+}
+
+.footer .container_m {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.footer .container_m .box_m {
+    padding: 1rem;
+}
+
+/* styler le titre a propos */
+.footer .container_m .box_m h1 {
+
+    color: var(--blanc);
+    font-weight: 600;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+
+/* styler le text de a propos */
+.footer .container_m .box_m .textAprp {
+    color: var(--blanc);
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+/* styler les icons fb insta ytb */
+.footer .container_m .box_m .icon_aprp a i {
+
+    height: 2rem;
+    color: var(--blanc);
+    width: 2rem;
+    line-height: 2rem;
+    background-color: var(--vert);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin: 0 .5rem;
+}
+
+.footer .container_m .box_m .icon_aprp a i:hover {
+    color: var(--vert);
+    background-color: var(--bleu);
+    border: 1px solid var(--vert);
+}
+
+/* styler la partie coordonnées */
+.footer .container_m .box_m .icon_contact a {
+    display: block;
+    color: var(--blanc);
+
+    margin: 1rem 0;
+}
+
+.footer .container_m .box_m .icon_contact a i {
+    margin-right: .5rem;
+    color: var(--vert);
+}
+
+
+.footer .container_m .box_m .icon_contact a:hover i {
+    padding-right: 1rem;
+
+}
+
+/* styler la partie des liens directs */
+.footer .container_m .box_m .icon_ld a {
+    display: block;
+    color: var(--blanc);
+
+    margin: 1rem 0;
+
+}
+
+.footer .container_m .box_m .icon_ld a:hover {
+    color: var(--vert);
+}
+
+/* partie created with love */
+
+.footer .love p {
+    padding-top: 1rem;
+    text-align: center;
+    border-top: .1rem solid var(--vert);
+
+    color: var(--blanc);
+    font-family: 'Rock Salt', cursive;
+    text-transform: lowercase;
+}
+
+.footer .love i {
+    color: red;
+}
+
+/* ******************************fin footer********************************* */
+
+
+
+
+/* *******************************achat t-shirt********************************** */
+.achatPull {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    margin-top: 100px;
+
+}
+
+.achatPull.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.achatPull .boxPull {
+    /* width: 800px; */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10%);
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: all 1s ease;
+    margin-right: 170px;
+
+}
+
+.achatPull.show .boxPull {
+    opacity: 1;
+    margin-left: 0;
+}
+
+.achatPull .boxPull .img-area {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   
+}
+
+.achatPull .boxPull .img-area .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 95%;
+    background-image: url('assets/argentine.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+}
+
+.achatPull .boxPull .form {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 40px 30px;
+}
+
+.achatPull .boxPull .form h1 {
+    color: var(--bleu);
+    font-size: 30px;
+}
+
+.achatPull .boxPull .form h3 {
+    color: var(--bleu);
+}
+
+.clr {
+    color: red;
+}
+
+.achatPull .boxPull .form .form-control {
+
+    height: 45px;
+    margin-bottom: 5vh;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--bleu);
+    font-size: 15px;
+    color: var(--bleu);
+}
+
+.achatPull .boxPull .form .form-control:focus {
+    outline: none;
+}
+
+.achatPull .boxPull .form label {
+    font-size: 15px;
+    color: #555555;
+}
+
+.achatPull .boxPull .form .btn_achat {
+    width: 100%;
+    background-color: var(--vert);
+    margin-top: 20px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.achatPull .boxPull .form .btn_achat:focus {
+    outline: none;
+}
+
+.achatPull .boxPull .form .btn_achat:hover {
+    background-color: var(--bleu);
+}
+
+
+/*responsive*/
+@media(max-width: 767px) {
+    .achatPull .boxPull {
+        width: calc(100% - 30px);
+    }
+
+    .achatPull .boxPull .img-area {
+        display: none;
+    }
+
+    .achatPull .boxPull .form {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* *******************************fin achat t-shirt********************************** */
+
+/* *******************************debut joueurs********************************** */
+.container {
+    margin: 8rem 9%;
+    
+}
+
+.title_joueur {
+    text-align: center;
+    color: var(--bleu);
+    text-transform: uppercase;
+}
+.best {
+    
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-family: 'Rock Salt', cursive;
+}
+
+.text_joueur {
+    text-align: center;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    position: relative;
+    flex: 1;
+    max-width: 460px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.image img {
+    opacity: 0.8;   
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+
+.image:hover img {
+    opacity: 1;
+}
+
+.image .details {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:var(--blanc);
+    width: 100%;
+    height: 100%;
+}
+
+.image .details h2 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 70px;
+    transition: 0.4s;
+    transition-property: transform;
+}
+
+.image .details h2 span {
+    font-weight: 900;
+}
+
+.image:hover .details h2 {
+    transform: translateY(-30px);
+}
+
+.image .details p {
+    margin: 3% 3% 0 3%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+    background-color: rgba(0, 26, 112, .7);
+}
+
+.image:hover .details p {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px) {
+    .image {
+        flex: 100%;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 400px) {
+    .image .details p {
+        font-size: 16px;
+    }
+
+    .more .read-more,
+    .more .icon-links a i {
+        font-size: 18px;
+    }
+}
+
+/* *******************************fin joueurs********************************** */
+
+/**************************actualité***********************/
+.content1 {
+    width: 100%;
+    height: 500px;
+    margin:  15px auto;
+    
+}
+#titre{
+    color: var(--blanc);
+    background-color: rgba(0, 26, 112, .6);
+    font-size: 1.5rem;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+.info{
+    margin: 90px auto;   
+}
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/*button design*/
+
+  .start_btny button {
+  
+    margin-top: .6rem;
+    width: 100%;
+    padding: .6rem 1.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--blanc);
+    background-color: rgba(0, 26, 112, .7);
+    font-size: 1.1rem;
+    border-radius: 2vh;
+}
+.start_btny button:hover {
+    color: var(--bleu);
+    background-color: var(--vert);
+    transition: ease-in .5s;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text  {font-size: 11px}
+.dot{
+ height: 10px;
+  width: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .prev, .next,.text {font-size: 14px}
+}}
+.box{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #53531f;
+    margin: 15px auto;
+}
+.l{
+    width: 80px;
+    height: 80px;
+}
+.bt {
+    display:inline-block ;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#b{
+    font: inherit;
+    font-size: 1em;
+    border-radius: 2vh;
+    margin-left: 10em;
+    margin-right: 10em;
+    background: transparent;
+    padding-bottom: 12px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#b:hover{
+    box-shadow: 0 0 5em rgba(27, 27, 162, 0.4);
+}
+strong {
+	font-weight: 800;
+}
+.mat{
+	background-color: rgba(227, 229, 233, 0.6);
+	display: flex;
+	flex-direction: column;
+	min-width:300px;
+	border-radius: 10px;
+	box-shadow: 0 0 2px 0 rgba(#303030, 0.1), 0 4px 4px 0 rgba(#303030, 0.1);
+	
+}
+.imagef{
+    height: auto;
+    width: 100vw;
+    background-image:  url('assets/img3.jpg');
+    background-size: cover;
+}
+.match-header {
+    background-color: #FFFFFF;
+	display: flex;
+	padding: 6px;
+}
+.match-status {
+	background-color: #fdeaec;
+	color: #d72641;
+	padding: 8px 12px;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	line-height: .7;
+}
+.match-status:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: currentcolor;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.match-tournament {
+	display: flex;
+	align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Rock Salt', cursive;
+    margin-right: auto;
+    margin-left: auto;
+    min-width:300px;
+  
+}
+.match-tournament img {
+    width: 100px;
+    margin-right: 80px;
+}
+.match_cont {
+	display: flex;
+	position: relative;
+    min-width:90px;
+}
+.column {
+	padding: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100%/3);
+}
+
+.teamg {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	
+}
+.box {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: var(--color-bg-primary);
+	box-shadow: 0 4px 4px 0 rgba(#303030, 0.15),
+		0 0 0 15px var(--color-bg-secondary);
+    
+}
+.team-logo img{
+		width: 100%;
+        height: 100%;
+}
+.box {
+	text-align:center;
+	margin-top: 24px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.nm{
+    color: var(--bleu);
+    font-size: 1.5rem;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+.match-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+ .match-date, .match-referee{
+	font-size: 14px;
+	color:#8A8F98;
+}
+.match-date, .match-referee strong {
+    color: #1c2a38;
+}
+.match_score {
+	margin-top: 12px;
+	display: flex;
+    font-size: 70px;
+    color: #001A70;
+	align-items: center;
+}
+.match-referee {
+	margin-top: 12px;
+}
+.match-time-lapsed {
+	color: #DF9443;
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 8px;
+}
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .box{
+        padding: 4rem;
+    }
+    .match_score{
+        font-size: 40px;
+    }
+
+}
+
+
+/*Reponse message commande  d'achat
+.reponse {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    padding: 2px;
+    display: none;
+    margin-left: 10px;
+  }
+
+*/

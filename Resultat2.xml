@@ -1,0 +1,32 @@
+<Resultat>
+<match>
+  <equipee1>JSK</equipee1>
+  <nomm1>JSK</nomm1>
+  <equipee2>USMA</equipee2>
+  <nomm2>USMA</nomm2>
+  <scoree>3-1</scoree>
+  <duree>80'</duree>
+  <heuree>17:30</heuree>
+  <chainee> TV TAMAZIGHT</chainee>
+</match>
+<match>
+  <equipee1>CRB</equipee1>
+  <nomm1>CRB</nomm1>
+  <equipee2>PAC</equipee2>
+  <nomm2>PAC</nomm2>
+  <scoree>2-1</scoree>
+  <duree>50'</duree>
+  <heuree>18:00</heuree>
+  <chainee> TV A3</chainee>
+</match>
+<match>
+  <equipee1>MCO</equipee1>
+  <nomm1>MCO</nomm1>
+  <equipee2>ESS</equipee2>
+  <nomm2>ESS</nomm2>
+  <scoree>0-0</scoree>
+  <duree>50'</duree>
+  <heuree>18:00</heuree>
+  <chainee> CANAL ALGERIE</chainee>
+</match>
+</Resultat>

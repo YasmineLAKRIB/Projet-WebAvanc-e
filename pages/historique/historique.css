@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --bleu: #001A70;
+    --vert: #00CC7C;
+    --noir: #000000;
+    --blanc: #FFFFFF;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+/* *************************** debut navbar **********************************/
+.header {
+    position: fixed;
+    padding: .9rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bleu);
+    z-index: 10000;
+}
+
+.header .resp a {
+    color: var(--blanc);
+    background-color: var(--vert);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+    border-radius: 2vh;
+    font-size: .8rem;
+}
+
+.header .resp :hover {
+    color: var(--bleu);
+}
+
+/* logo */
+.header .footy {
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    color: var(--blanc);
+}
+
+.header .footy span {
+    color: var(--vert);
+}
+
+/* les liens du navbar */
+.header .navbar a {
+    font-size: 1rem;
+    color: var(--blanc);
+    margin: 0 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--vert);
+}
+
+/* responsive */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+}
+
+/* *************************** Fin navbar **********************************/
+
+/* *************************image et contenu d'acceuil****************** */
+
+.img_m {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../../assets/img5.jpg');
+}
+
+.acceuil {
+    padding: 0%;
+}
+
+/* style image de l'acceuil */
+.acceuil .acceuil-img .img_m {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* padding: 2rem; */
+    padding: 8%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* contenu de l'image de l'acceuil */
+.acceuil .acceuil-img .img_m .content {
+    text-align: center;
+}
+
+.acceuil .acceuil-img .img_m .content .title_m1  {
+    font-size: 4rem;
+    color: var(--blanc);
+    text-transform: uppercase;
+}
+/*
+.btn_m2 {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--blanc);
+    background-color: rgba(0, 26, 112, .7);
+    font-size: 1.4rem;
+    border-radius: 2vh;
+}
+
+.btn_m2:hover {
+    color: var(--belu);
+    background-color: var(--vert);
+    transition: ease-in .5s;
+}
+*/
+
+/*Button pour commencer le quiz*/
+.start_btn button {
+  
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--blanc);
+    background-color: rgba(0, 26, 112, .7);
+    font-size: 1.4rem;
+    border-radius: 2vh;
+}
+.start_btn button:hover {
+    color: var(--belu);
+    background-color: var(--vert);
+    transition: ease-in .5s;
+}
+
+.foot_m {
+    color: var(--bleu);
+    font-size: 3.5rem;
+    /* text-transform: uppercase; */
+    font-family: 'Rock Salt', cursive;
+    
+}
+
+/* ************************* Fin image et contenu d'acceuil****************** */
+
+/* ******************************debut footer********************************* */
+
+.footer {
+    background: var(--bleu);
+}
+
+.footer .container_m {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.footer .container_m .box_m {
+    padding: 1rem;
+}
+
+/* styler le titre a propos */
+.footer .container_m .box_m h1 {
+    /* font-size: 2.5rem; */
+    color: var(--blanc);
+    font-weight: 600;
+    /* padding-bottom: 1rem; */
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+/* styler le text de a propos */
+.footer .container_m .box_m .textAprp {
+    color: var(--blanc);
+    /* font-size: 1.3rem; */
+    /* font-weight: normal; */
+    /* line-height: 1.8rem; */
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+    /* text-align: justify; */
+}
+
+/* styler les icons fb insta ytb */
+.footer .container_m .box_m .icon_aprp a i{
+    height: 2rem;
+    color: var(--blanc);
+    width: 2rem;
+    line-height: 2rem;
+    background-color: var(--vert);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin: 0 .5rem;
+}
+
+.footer .container_m .box_m .icon_aprp a i:hover {
+    color: var(--vert);
+    background-color: var(--bleu);
+    border: 1px solid var(--vert);
+}
+
+/* styler la partie coordonnées */
+.footer .container_m .box_m .icon_contact a {
+    display: block;
+    color: var(--blanc);
+    /* font-size: 1.2rem; */
+    margin: 1rem 0;
+}
+
+.footer .container_m .box_m .icon_contact a i {
+    margin-right: .5rem;
+    color: var(--vert);
+}
+
+.footer .container_m .box_m .icon_contact a:hover i{
+    padding-right: 1rem;
+    
+}
+
+/* styler la partie des liens directs */
+.footer .container_m .box_m .icon_ld a{
+    display: block;
+    color: var(--blanc);
+        /* font-size: 1.2rem; */
+        margin: 1rem 0;
+}
+
+.footer .container_m .box_m .icon_ld a:hover {
+    color: var(--vert);
+}
+
+/* partie created with love */
+.footer .love p{
+    padding-top: 1rem;
+    text-align: center;
+    border-top: .1rem solid var(--vert);
+    /* font-weight: 500; */
+    color: var(--blanc);
+    font-family: 'Rock Salt', cursive;
+    text-transform: lowercase;
+}
+
+.footer .love i {
+    color: red;
+}
+
+/* ******************************fin footer********************************* */
+/* ******************************fin Contenu Index************************** */
+
+
+/*****************************************************************************/
+/* ******************************Debut Contenu Historique******************* */
+
+
+
+#presentation,
+#container {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    box-shadow: 0px 0px 50px -1px black;
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 1s linear;
+  
+}
+
+#presentation .logo {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 180px;
+    height: 200px;
+    background: #001A70;
+    transition: 1s linear;
+    margin-left: 15px;
+    
+}
+
+#presentation .logo h1{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#presentation .logo img{
+    width: 200px;
+    margin: -10px 10px 10px 10px;
+    filter: drop-shadow(0px 0px 20px black);
+}
+
+/*Navigation interne propre à la page historique*************************************/
+
+#presentation nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#presentation nav .right_menu {
+    display: flex;
+    align-items: center;
+}
+
+#presentation nav .right_menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+#presentation nav .right_menu ul li{
+    padding: 3px 12px;
+}
+
+#presentation nav .right_menu ul li a{
+    text-decoration: none;
+    position: relative;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(255, 249, 249);
+    transition: .3s linear;
+}
+
+#presentation nav .right_menu ul li a::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #00CC7C;
+    border-radius: 50%;
+    bottom: -5px;
+    left: 45%;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+#presentation nav .right_menu ul li a:hover {
+    color: #00CC7C;
+    
+    background: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+#presentation nav .right_menu ul li a:hover::before {
+    opacity: 1;
+}
+
+#presentation nav .right_menu .user_cart {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+#presentation .left_menu {
+    width: 20px;
+    height: 90%;
+    
+}
+
+#presentation section {
+    width: 97%;
+    height:90%;   
+}
+
+/*Debut Section contnu ************************************************************/
+/****************************************************************************/
+
+#presentation section .content {
+    position: relative;
+    left: 250px;
+    margin-top: 8%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 1s linear;
+
+}
+
+#presentation section .content h1 {
+    font-size: 40px;
+    transition: 1s linear;
+}
+
+#presentation section .content p {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+   
+    word-break: break-all;
+}
+
+#presentation section .content .price_order {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+#presentation section .content .price_order a{
+    padding: 4px 20px;
+    background: #001A70;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 35px;
+    border-radius: 5px;
+    margin-bottom: 13px;
+}
+
+#presentation section .content .price_order a:hover {
+ 
+    color: #001A70;
+    background: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+
+/*Fin Section contnu ************************************************************/
+/****************************************************************************/
+/*Debut Creation des Cartes**************************************************/
+/****************************************************************************/
+
+#presentation section .cards {
+    width: 120%;
+    height: 210px;
+    position: relative;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: 1s linear ;
+    padding: 8px;
+
+    
+}
+
+#presentation section .cards::-webkit-scrollbar {
+    display: none;
+}
+
+#presentation section .cards .card {
+    position: relative;
+    width: 220px;
+    height: 190px;
+    border: 2px solid black;
+    margin: 5px;
+    background: #001a70af;
+    border-radius: 50px 10px 10px 10px;
+}
+
+#presentation section .cards .card:hover {
+    border: 3.5px solid black;
+    background: #00cc7a2c;
+}
+
+#presentation section .cards .card:mth-last-child(1) {
+    margin-right: 0px;
+}
+
+#presentation section .cards .card .dis{
+    width: 90px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+#presentation section .cards .card .disd{
+    width: 110px;
+    position: relative;
+    top: 100px;
+    left: 65px;
+}
+
+#presentation section .cards .card h4 {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    text-overflow: ellipsis ;
+}
+
+#presentation section .cards .card q{
+    color: white;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px 10px;
+    margin-top: -32px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: inherit;
+    margin-left: 8px;
+    position: absolute;
+
+}
+#presentation section .cards .card p{
+    color: rgb(3, 0, 0);
+    font-size: 5px;
+    font-weight: 500;
+}
+
+#presentation section .cards .card .rate_cart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    color: rgb(5, 48, 85);
+}
+#presentation section .cards .card .rate_cart h6 {
+    font-size: 10px;
+
+}
+
+
+
+
+/*Fin Creation des Cartes**************************************************/
+/****************************************************************************/
+/* Debut de mise en forme responsive de la page ***************************************************/
+
+
+
+
+
+@media screen and (max-width: 885px){
+    #presentation {
+        width: 95%;
+    }
+    #presentation nav .right_menu ul li a {
+        font-size: 12px;
+    }
+    #presentation section .content {
+        left: 200px;
+    }
+    #presentation section .content h1{
+        font-size: 35px;
+    }
+    #presentation section .content p{
+        color: white;
+    }
+    #presentation .logo {
+        height: 190px; 
+    }
+
+    #presentation section .cards .card .dis{
+        left: 10px;
+    }
+    #presentation section .cards .card .disd{
+        left: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 775px){
+    #presentation .logo {
+        left: 13%;
+    }
+    #presentation section .content {
+        left: 340px;
+    }
+    
+    #presentation section {
+        width: 91%;
+    }
+    #presentation nav .right_menu ul li a {
+        font-size: 11px;
+    }
+    #presentation section .cards .card .dis{
+        width: 80px;
+     
+    }
+    
+    #presentation section .cards .card .disd{
+        width: 100px;
+    
+    }
+    #presentation section .content {
+        left: 200px;
+    }
+    #presentation section .content h1{
+        font-size: 30px;
+    }
+    #presentation section .content p{
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 730px){
+    #presentation  {
+        width: 100%;
+        height: 100%;
+    }
+    #presentation nav .right_menu ul li a {
+        font-size: 10px;
+    }
+    #presentation section .cards .card .dis,
+    #presentation section .cards .card .disd{
+        width: 70px;
+        top: -10px;
+        left: -10px;
+    }
+    #presentation section .cards .card h4 {
+        font-size: 11px;
+    }
+    #presentation section .cards .card q{
+        font-size: 10px;
+        padding: 0px 10px;
+        margin-top: 5px;
+        margin-left: 1px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #presentation section .cards .card p{
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+@media screen and (max-width: 730px){
+    #presentation  {
+        width: 100%;
+        height: 100%;
+    }
+    #presentation nav .right_menu ul il {
+        padding: 3px 6px;
+    }
+    #presentation section .cards {
+        height: 229px;
+        padding: 8px;
+    }
+    
+    #presentation section .cards .card {
+        width: 240px;
+        height: 220px;
+
+    }
+
+    #presentation section .content {
+      left: 200px;
+    }
+
+    #presentation section .content h1 {
+      font-size: 30px;
+    }
+
+    #presentation section .content p {
+       font-size: 12px;
+    }
+
+    #presentation .logo {
+       width: 160px;
+       height: 180px;
+    }
+
+    #presentation .logo img{
+       width: 170px;
+    }
+}
+
+@media screen and (max-width: 685px){
+        
+    #presentation nav .right_menu ul {
+        position: absolute;
+        top: 20%;
+        flex-direction: column;
+        width: 15px;
+        right: 17px;
+    }
+    #presentation nav .right_menu ul li {
+        padding: 30px 10px;
+        transform: rotate(90deg);
+    }
+    #presentation section .content {
+        left: 24%;
+        top: 38%; 
+    }
+    #presentation .logo {
+        left: 30%;
+    }
+    #presentation section .cards {
+        top: 43%;
+    }
+    #presentation section .social {
+        top: 45%;
+
+    }
+    #presentation .logo {
+        background: #001a7000;
+        
+    }
+    #presentation .logo img{
+        display: none;
+    }
+    #presentation .logo h1{
+        text-align: left;
+       
+    }
+    #presentation section .content h1 {
+        font-size: 30px;
+        transition: 1s linear;
+    }
+    #presentation section .cards .card .dis,
+    #presentation section .cards .card .disd{
+        width: 67px;
+        top: -5px;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+
+    #presentation section .cards .card .disd,.dis{
+        display: none;
+    }
+
+    #presentation section .cards .card q{
+       padding: 90px 10px;
+       margin-top: -32px;
+    }
+    #presentation section .cards .card {
+        background: #00cc7a49;
+    }
+
+    #presentation section .cards #cx {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    #presentation .logo {
+        left: 20%;
+    }
+    #presentation section .content {
+        left: 11%;
+        top: 38%;
+
+    }
+    #presentation .logo {
+        background: #001a7000;
+        
+    }
+    #presentation .logo img{
+        display: none;
+    }
+    #presentation .logo h1{
+        text-align: right;
+    }
+    #presentation section .content h1 {
+        font-size: 45px;
+        transition: 1s linear;
+    }
+    #presentation section .content p {
+        font-size:14px;
+    }
+
+
+
+    
+#presentation section .cards .card {
+    position: relative;
+    width: 220px;
+    height: 190px;
+    border: 2px solid black;
+    margin: 5px;
+    background: #001a70af;
+    border-radius: 50px 10px 10px 10px;
+}
+#presentation section .cards .card:mth-last-child(1) {
+    margin-right: 0px;
+}
+
+#presentation section .cards .card .dis{
+    width: 90px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+#presentation section .cards .card .disd{
+    width: 110px;
+    position: relative;
+    top: 100px;
+    left: 65px;
+}
+
+    
+}
+
+@media screen and (max-width: 410px) {
+    #presentation section .content h1 {
+        font-size: 12px;
+    }
+    #presentation section .content p {
+        font-size: 9px;
+        width: 220px;
+    }
+    #presentation .logo {
+        width: 200px;
+    }
+    #presentation .logo img {
+        width: 245px;
+        margin: 75px 0px 0px -30px;
+    }
+    #presentation .logo {
+        background: #001a7000;
+        
+    }
+    #presentation .logo img{
+        display: none;
+    }
+    #presentation .logo h1{
+        color: rgb(255, 255, 255);
+        text-align: right;
+       
+    }    
+}
+
+
+
+/* Fin de mise en forme responsive de la page ***************************************************/
+/****************************************************************************************/
+/* Debut Mise en page des sections informatives: historique,pratique,jeu et competition*/
+
+.product-details {
+	position: relative;
+	padding: 30px;
+	height: 100%;
+}
+
+/* 	Product Name */
+#container .product-details h1{
+	display: inline-block;
+	position: relative;
+	font-size: 34px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details > p {
+	font-size: 11px;
+	color: #7d7d7d;
+	
+}
+
+.pratique,
+.Competition {
+    background: #001A70;
+    transition: none;
+}
+
+#container,
+.jeu {
+    background: white;
+    margin-bottom: 70px;
+    transition: none;
+}
+
+#container .product-details h1{
+    color: #001A70;
+}
+
+#container ul li h2 {
+    padding: 9px;
+    font-size: 21px;
+}
+
+#container ul li {
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 15px -1px greenyellow;
+    padding: 10px;
+    margin: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    
+}
+
+#container .product-details .exp li{
+    box-shadow: none;
+}
+
+#container .product-details #list {
+    list-style: inside;
+    padding-left: 30px;
+}
+
+#container .product-details #list li {
+    margin: 0%;
+    padding: 0%;
+    box-shadow: none;
+    
+}
+
+
+/* Fin Mise en page des sections informatives: historique,pratique,jeu et competition*/

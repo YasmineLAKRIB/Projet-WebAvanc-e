@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    
+    <title>Actualite</title>
+  </head>
+  <body>
+    <div class="mat">
+      <div class="match-header">
+        <div class="match-status">Live</div>
+        <div class="match-tournament">
+          <img src="./assets/qatar.jpg " />Coupe du monde
+        </div>
+      </div>
+      <div class="match_cont">
+        <div class="column">
+          <div class="teamg">
+            <div class="team-logo">
+              <div class="box" id="eq1">equipe1</div>
+              <div class="nm" id="nm1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="match-details">
+            <div class="match-date">
+              18 novembre at <strong id="h">heure</strong>
+            </div>
+
+            <div class="match_score" id="score">score</div>
+
+            <div class="match-time-lapsed" id="d">durée</div>
+            <div class="match-referee">
+              Chaine: <strong id="ch">chaine</strong>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="team team--droite">
+            <div class="team-logo">
+              <div class="box" id="eq2">equipe2</div>
+              <div class="nm" id="nm2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bt">
+        <button id="b" onclick="pred()">Pred</button>
+        <button id="b" onclick="next()">Next</button>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script src="ajax_L.js"></script>
+  </body>
+</html>
